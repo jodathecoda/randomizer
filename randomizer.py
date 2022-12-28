@@ -21,7 +21,7 @@ def explore(path):
         subprocess.run([FILEBROWSER_PATH, '/select,', os.path.normpath(path)])
 
 win = Tk() # This is to create a basic window
-win.geometry("70x100")  # this is for the size of the window 
+win.geometry("100x100")  # this is for the size of the window 
 win.resizable(0, 0)  # this is to prevent from resizing the window
 win.title("Calculator")
 
@@ -39,6 +39,6 @@ input_field.grid(row=0, column=0)
 input_field.pack(ipady=10) # 'ipady' is internal padding to increase the height of input field
 btns_frame = Frame(win, width=312, height=272.5, bg="grey")
 btns_frame.pack()
-#turn_ggop = Button(btns_frame, text = "RAND", fg = "black", width = 15, height = 3, bd = 0, bg = "pink", cursor = "hand2", command = lambda: randomizer()).grid(row = 5, column = 2, columnspan = 2, padx = 1, pady = 1)
-turn_ggop = Button(btns_frame, width = 15, height = 3,command = lambda: randomizer()).grid(row = 5, column = 2, columnspan = 2, padx = 1, pady = 1)
+turn_ggop = Button(btns_frame, text = "RAND", fg = "black", width = 15, height = 3, bd = 0, bg = "pink", cursor = "hand2", command = lambda: randomizer()).grid(row = 5, column = 2, columnspan = 2, padx = 1, pady = 1)
+#turn_ggop = Button(btns_frame,text = "RR", width = 15, height = 3,command = lambda: randomizer()).grid(row = 5, column = 2, columnspan = 2, padx = 1, pady = 1)
 win.mainloop()
